@@ -1,5 +1,5 @@
 {
-	"npmScope": "nativescript",
+	"npmScope": "13dante04",
 	"affected": {
 		"defaultBase": "master"
 	},
@@ -21,6 +21,9 @@
 			"tags": []
 		},
 		"all": {
+			"tags": []
+		},
+		"share-file": {
 			"tags": []
 		}
 	},

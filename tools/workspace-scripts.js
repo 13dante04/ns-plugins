@@ -57,12 +57,19 @@ module.exports = {
 			},
 		},
 		'⚙️': {
-			script: `npx cowsay "@nativescript/* packages will keep your ⚙️ cranking"`,
-			description: '_____________  @nativescript/*  _____________',
+			script: `npx cowsay "@13dante04/* packages will keep your ⚙️ cranking"`,
+			description: '_____________  @13dante04/*  _____________',
 		},
 		// packages
 		// build output is always in dist/packages
-		'@nativescript': {
+		'@13dante04': {
+			// @13dante04/share-file
+			'share-file': {
+				build: {
+					script: 'nx run share-file:build.all',
+					description: '@13dante04/share-file: Build',
+				},
+			},
 			'build-all': {
 				script: 'nx run all:build',
 				description: 'Build all packages',
@@ -73,10 +80,14 @@ module.exports = {
 			description: '_____________  Focus (VS Code supported)  _____________',
 		},
 		focus: {
+			'share-file': {
+				script: 'nx run share-file:focus',
+				description: 'Focus on @13dante04/share-file',
+			},
 			reset: {
 				script: 'nx run all:focus',
 				description: 'Reset Focus',
-			}
+			},
 		},
 		'.....................': {
 			script: `npx cowsay "That's all for now folks ~"`,
