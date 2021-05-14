@@ -21,7 +21,9 @@
 		],
 		"paths": {
 			"@demo/shared": ["tools/demo/index.ts"],
-			"@13dante04/*": ["packages/*"]
+			"@13dante04/*": ["packages/*"],
+			"@1304dante/*": ["packages/*"],
+			"@dante1304/*": ["packages/*"]
 		}
 	},
 	"exclude": ["node_modules", "tmp"]

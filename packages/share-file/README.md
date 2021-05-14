@@ -1,7 +1,7 @@
 # @nativescript/share-file
 
 ```javascript
-ns plugin add @1304dante/ns-share-file
+ns plugin add @dante1304/ns-share-file
 ```
 
 Share files between apps on android and ios

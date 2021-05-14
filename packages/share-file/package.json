@@ -1,6 +1,6 @@
 {
-	"name": "@13dante04/ns-share-file",
-	"version": "1.0.0",
+	"name": "@dante1304/ns-share-file",
+	"version": "1.0.1",
 	"description": "Add a plugin description",
 	"main": "index",
 	"typings": "index.d.ts",

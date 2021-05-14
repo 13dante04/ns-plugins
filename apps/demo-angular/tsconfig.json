@@ -6,7 +6,9 @@
 		"paths": {
 			"~/*": ["src/*"],
 			"@demo/shared": ["../../tools/demo/index.ts"],
-			"@13dante04/*": ["../../dist/packages/*"]
+			"@13dante04/*": ["../../dist/packages/*"],
+			"@1304dante/*": ["../../dist/packages/*"],
+			"@dante1304/*": ["../../dist/packages/*"]
 		}
 	},
 	"files": ["./references.d.ts", "./src/main.ts"]

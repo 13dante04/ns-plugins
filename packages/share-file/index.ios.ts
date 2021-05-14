@@ -14,7 +14,7 @@ export class ShareFile extends ShareFileCommon {
 			return console.error('[shareFileError] Please add a file path!');
 		}
 		try {
-			const appPath = this.getCurrentAppPath();
+			const appPath = ShareFile.getCurrentAppPath();
 			const path = options.path.replace('~', appPath);
 
 			let controller = UIDocumentInteractionController.interactionControllerWithURL(NSURL.fileURLWithPath(path));

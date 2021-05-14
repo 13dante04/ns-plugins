@@ -3,7 +3,9 @@
 	"compilerOptions": {
 		"baseUrl": ".",
 		"paths": {
-			"@13dante04/*": ["../../packages/*"]
+			"@13dante04/*": ["../../packages/*"],
+			"@1304dante/*": ["../../packages/*"],
+			"@dante1304/*": ["../../packages/*"]
 		}
 	}
 }
