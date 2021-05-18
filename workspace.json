@@ -127,6 +127,47 @@
 					}
 				}
 			}
+		},
+		"google-maps": {
+			"projectType": "library",
+			"schematics": {},
+			"root": "packages/google-maps",
+			"sourceRoot": "packages/google-maps",
+			"architect": {
+				"build": {
+					"builder": "@nrwl/node:package",
+					"options": {
+						"outputPath": "dist/packages/google-maps",
+						"tsConfig": "packages/google-maps/tsconfig.json",
+						"packageJson": "packages/google-maps/package.json",
+						"main": "packages/google-maps/index.ts",
+						"assets": [
+							"packages/google-maps/*.md",
+							"packages/google-maps/index.d.ts",
+							"LICENSE",
+							{
+								"glob": "**/*",
+								"input": "packages/google-maps/platforms/",
+								"output": "./platforms/"
+							}
+						]
+					}
+				},
+				"build.all": {
+					"builder": "@nrwl/workspace:run-commands",
+					"options": {
+						"commands": ["nx run google-maps:build", "node tools/scripts/build-finish.ts google-maps"],
+						"parallel": false
+					}
+				},
+				"focus": {
+					"builder": "@nrwl/workspace:run-commands",
+					"options": {
+						"commands": ["nx g @nativescript/plugin-tools:focus-packages google-maps"],
+						"parallel": false
+					}
+				}
+			}
 		}
 	},
 	"cli": {

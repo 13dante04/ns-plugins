@@ -70,6 +70,13 @@ module.exports = {
 					description: '@13dante04/share-file: Build',
 				},
 			},
+			// @dante1304/google-maps
+			'google-maps': {
+				build: {
+					script: 'nx run google-maps:build.all',
+					description: '@dante1304/google-maps: Build',
+				},
+			},
 			'build-all': {
 				script: 'nx run all:build',
 				description: 'Build all packages',
@@ -83,6 +90,10 @@ module.exports = {
 			'share-file': {
 				script: 'nx run share-file:focus',
 				description: 'Focus on @13dante04/share-file',
+			},
+			'google-maps': {
+				script: 'nx run google-maps:focus',
+				description: 'Focus on @dante1304/google-maps',
 			},
 			reset: {
 				script: 'nx run all:focus',

@@ -25,6 +25,9 @@
 		},
 		"share-file": {
 			"tags": []
+		},
+		"google-maps": {
+			"tags": []
 		}
 	},
 	"workspaceLayout": {

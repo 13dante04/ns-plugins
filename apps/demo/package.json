@@ -7,7 +7,8 @@
 		"nativescript-theme-core": "file:../../node_modules/nativescript-theme-core",
 		"@nativescript/core": "file:../../node_modules/@nativescript/core",
 		"@nativescript/share-file": "file:../../packages/share-file",
-		"@13dante04/share-file": "file:../../packages/share-file"
+		"@13dante04/share-file": "file:../../packages/share-file",
+		"@dante1304/google-maps": "file:../../packages/google-maps"
 	},
 	"devDependencies": {
 		"@nativescript/android": "7.0.1",

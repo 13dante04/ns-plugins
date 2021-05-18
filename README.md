@@ -1,11 +1,5 @@
-# @13dante04/\* plugins
-
-```
-npm run setup
-npm start
-```
-
-- @13dante04/share-file
+- @dante1304/google-maps
+- @dante1304/share-file
 
 # How to use?
 

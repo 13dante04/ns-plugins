@@ -13,5 +13,22 @@
 		"schema": true
 	},
 	"NativescriptExtend.format.enabled": true,
-	"NativescriptExtend.validation.enabled": true
+	"NativescriptExtend.validation.enabled": true,
+	"workbench.colorCustomizations": {
+		"activityBar.activeBackground": "#3ecfa2",
+		"activityBar.activeBorder": "#a94cd3",
+		"activityBar.background": "#3ecfa2",
+		"activityBar.foreground": "#15202b",
+		"activityBar.inactiveForeground": "#15202b99",
+		"activityBarBadge.background": "#a94cd3",
+		"activityBarBadge.foreground": "#e7e7e7",
+		"statusBar.background": "#2baf86",
+		"statusBar.foreground": "#15202b",
+		"statusBarItem.hoverBackground": "#218667",
+		"titleBar.activeBackground": "#2baf86",
+		"titleBar.activeForeground": "#15202b",
+		"titleBar.inactiveBackground": "#2baf8699",
+		"titleBar.inactiveForeground": "#15202b99"
+	},
+	"peacock.color": "#2baf86"
 }
