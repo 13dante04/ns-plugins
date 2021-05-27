@@ -342,7 +342,7 @@ export class MapView extends MapViewBase {
 
 		return this.nativeView;
 	}
-	public setupMarkerCluster(markers: Marker[], minClusterNumber: number) {
+	public setupMarkerCluster(markers: Marker[], minClusterNumber = 2) {
 		let _this = this;
 		var clusterManager = new CustomClusterManager(Utils.android.getApplicationContext(), _this.gMap);
 		var renderer = new CustomClusterRenderer(Utils.android.getApplicationContext(), _this.gMap, clusterManager, maxZoomLevel, _this, minClusterNumber);

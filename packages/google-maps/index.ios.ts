@@ -3,6 +3,7 @@ import { GC, layout } from '@nativescript/core/utils';
 import { Image, Color, ImageSource } from '@nativescript/core';
 import { Point } from '@nativescript/core/ui/core/view';
 import { MapStyle } from '.';
+import { CustomClusterItem } from './clustering/clusterer.android';
 
 export * from './common';
 
@@ -113,7 +114,24 @@ class MapViewDelegateImpl extends NSObject implements GMSMapViewDelegate {
 			owner._processingCameraEvent = false;
 		}
 	}
-
+	public setupMarkerCluster(markers: Marker[], minClusterNumber = 2) {
+		let mapView = this._owner.get();
+		console.log('*** init ios map view: ');
+		let iconGenerator;
+		let algorithm;
+		let renderer;
+		let clusterManager;
+		let clusterManagerDelegate;
+		clusterManager.clearItems();
+		clusterManager.setDelegateMapDelegate(clusterManagerDelegate, mapView);
+		let rendererDelegate; /*= GMUClusterRendererDelegateImpl.initWithMapViewClusterIconGenerator(mapView.nativeView, iconGenerator, new WeakRef(this))*/
+		renderer.delegate = rendererDelegate;
+		markers.forEach((marker, i) => {
+			let clusterItem;
+			clusterManager.addItem(clusterItem);
+		});
+		clusterManager.cluster();
+	}
 	public mapViewDidChangeCameraPosition(mapView: GMSMapView, cameraPosition: GMSCameraPosition) {
 		let owner = this._owner.get();
 		owner.notifyCameraEvent(MapViewBase.cameraMoveEvent, {
